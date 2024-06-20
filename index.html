@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="图片元素及其关联元素的联用演示" />
+    <title>太阳系——Solar System</title>
+  </head>
+  <body>
+    <!-- 可附标题内容元素 -->
+    <!--  <figure> 元素代表一段独立的内容，可能包含 <figcaption> 元素定义的说明元素。该插图、标题和其中的内容通常作为一个独立的引用单元。 -->
+    <!-- figure 元素通常用于把图片、图片标题、描述包裹起来，表示 figure 中的全部内容均是与图片相关的内容。 -->
+    <figure>
+      <a
+        href="https://baike.baidu.com/item/太阳系/173281"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          usemap="#solar_system_map"
+          src="./img/solar.jpg"
+          alt="太阳系概述图"
+          title="太阳系"
+        />
+      </a>
+
+      <!-- <figcaption>元素是用来描述其父节点 <figure> 元素里的其余内容的标题或说明。为 <figure> 提供一个无障碍描述。 -->
+      <figcaption>
+        <h2>太阳系</h2>
+        <i>太阳和地球的区域可以点击进行跳转，以查看关于这两颗星球的百科信息</i>
+      </figcaption>
+      <p>
+        太阳系位于距银河系中心大约估计值为2.4~2.7万光年的位置（银河系的恒星数量约在1000亿到4000亿之间，太阳只是其中之一）。太阳以220千米/秒的速度绕银心运动，大约2.5亿年绕行一周，地球气候及整体自然界也因此发生2.5亿年的周期性变化。太阳运行的方向基本上是朝向织女座，靠近武仙座的方向。
+      </p>
+    </figure>
+
+    <!-- <map> 元素与 <area> 元素一起使用来定义一个图像映射（一个可点击的链接区域）。 -->
+    <map name="solar_system_map">
+      <!-- area元素的用法：https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/area -->
+      <area
+        shape="circle"
+        coords="91,93,78"
+        href="https://baike.baidu.com/item/%E5%A4%AA%E9%98%B3/24010"
+        alt="太阳"
+        title="太阳"
+        target="_blank"
+      />
+
+      <area
+        shape="circle"
+        coords="278,239,46"
+        href="https://baike.baidu.com/item/%E5%9C%B0%E7%90%83/6431"
+        alt="地球"
+        title="地球"
+        target="_blank"
+      />
+    </map>
+  </body>
+</html>
